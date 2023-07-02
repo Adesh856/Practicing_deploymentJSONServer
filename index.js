@@ -6,5 +6,5 @@ const middelware = jsonServer.defaults()
 const Port = 8080
 
 server.use(middelware)
-server.router(router)
+server.use(router)
 server.listen(Port)
